@@ -1,0 +1,59 @@
+<!--Responsable: Integrante 5
+Debe incluir:
+
+Formulario <form> semántico
+Campos obligatorios:
+Nombre
+Apellidos
+Correo
+Teléfono
+Mensaje
+Select de tipo de consulta
+Checkbox de suscripción
+<fieldset> y <legend>
+Botón de envío
+Texto informando la ubicación/horarios-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Contact Form</h2>
+            <hr><label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter name" required><br>
+            <hr><label for="last_name">Last name</label>
+            <input type="text" name="last_name" placeholder="Enter Last Name" required><br>
+    
+            <hr><label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+            <hr><label for="phone">Cellphone</label>
+            <input type="tel" name="phone" placeholder="Enter cellphone" required>
+            <hr><label for="message">Message</label>
+            <input type="text" name="message" placeholder="Enter message">
+            <hr><label for="consut">Type consult</label>
+            <select name="consult" id="consult" required>
+                <option value="">choose option</option>
+                <option value="1">first consult</option>
+                <option value="2">second consult</option>
+                <option value="3">third consult</option>
+            </select>
+            <hr>
+            <fieldset>
+                <legend>subscription</legend>
+                <label>
+                <input type="checkbox" name="subcription">
+                </label>  
+            </fieldset> 
+           <button type="submit">Send</button>
+                
+            
+
+
+
+    </form>
+</body>
+</html>
