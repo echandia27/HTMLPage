@@ -7,12 +7,10 @@
     --fuente: cursive;
 }
 
+
 body {
     background-color: var(--color-fondo);
-    font-family: var(--fuente);
     color: var(--color-texto);
-}
-body {
     font-family: var(--fuente);
     margin: 0;
     margin-top: 150px;
@@ -67,3 +65,4 @@ nav button:hover {
     background-color:var(--color-secundario);
  
 }
+
