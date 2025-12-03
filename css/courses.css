@@ -1,0 +1,118 @@
+@import url('base.css');
+
+/* =======================
+   CABECERA DEL CATALOGO
+   ======================= */
+.catalog-header {
+    text-align: center;
+    padding: 60px 20px 40px; /* más espacio arriba y abajo */
+    background: linear-gradient(135deg, var(--color-primario), var(--color-complementario));
+    color: white;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 20px auto 50px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.catalog-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.catalog-description {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* =======================
+   LISTA DE CURSOS
+   ======================= */
+.catalog-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* =======================
+   CADA CURSO
+   ======================= */
+.catalog-item {
+    margin-bottom: 35px;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: row; /* horizontal */
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.catalog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Imagen del curso */
+.catalog-image {
+    width: 230px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Contenido textual */
+.catalog-content {
+    flex: 1;
+}
+
+.catalog-name {
+    color: var(--color-primario);
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+
+.catalog-objective {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.catalog-topics {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.catalog-link {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.catalog-link:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media (max-width: 768px) {
+    .catalog-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .catalog-image {
+        width: 80%;
+        max-width: 300px;
+    }
+}
