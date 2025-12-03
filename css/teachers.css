@@ -6,13 +6,7 @@
     --color-texto: #1A1A1A;
     --fuente: 'Poppins', sans-serif;
 }
-body {
-    background-color: var(--color-fondo);
-    font-family: var(--fuente);
-    color: var(--color-texto);
-    margin: 10px;
-    padding: 10px;
-}
+
 .h1 {
     background-color: var(--color-primario);
     color: white;
